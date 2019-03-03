@@ -1,0 +1,92 @@
+@import './modules/colors';
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    position: absolute;
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        height: 50px;
+        width: 360px;
+        border: 1px solid $gray-600;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+        font-size: 14pt;
+        display: block;
+    }
+
+    .btn{
+        height: 50px;
+        width: 150px;
+        font-size: 14pt;
+        font-weight: bold;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .btn-success{
+        border: 1px solid $green-500;
+        background: $green-500;
+    }
+
+    nav{
+        width: 100%;
+        height: 70px;
+
+        ul{
+            width: 100%;
+            height: 70px;
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style: none;
+            box-sizing: border-box;
+            background-color: $gray-100;  
+
+            li{
+                width: 100px;
+                height: 70px;
+                line-height: 70px;
+                float: left;
+                text-align: center;
+                font-weight: bold;
+                color: $gray-900;
+                &:hover{
+                    background-color: $gray-200;
+                }
+            }
+        }
+
+        .activeNav{
+            background-color: $gray-200;
+        }
+    }
+
+    .container{
+        width: 100%;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+        position: relative;
+
+        
+        .signupForm{
+            margin: 70px auto;
+            width: 360px;
+            text-align: center;
+
+            .signUpCheckbox{
+                width: 23px;
+                height: 23px;
+                margin: 20px 0px 25px 0px !important;
+            }
+        }
+    }
+    
+}
